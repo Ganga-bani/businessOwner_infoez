@@ -1,0 +1,729 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: features\Features.feature.spec.js >> Infoez business login page >> Verify Dashboard
+- Location: .features-gen\features\Features.feature.spec.js:35:7
+
+# Error details
+
+```
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('//span[text()=\'Ravi\']') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Infoez Find Local" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e11]:
+          - generic [ref=e12]: Infoez
+          - generic [ref=e13]: Find Local
+      - navigation [ref=e14]:
+        - link "Explore" [ref=e15] [cursor=pointer]:
+          - /url: /search
+        - link "Near me" [ref=e16] [cursor=pointer]:
+          - /url: /map
+        - link "How it works" [ref=e17] [cursor=pointer]:
+          - /url: /how-it-works
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+      - generic [ref=e19]:
+        - button "Sign in" [ref=e20] [cursor=pointer]
+        - button "Get started" [ref=e21] [cursor=pointer]
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: Find Local · Choose Better
+          - heading "The verified way to discover local businesses in your city." [level=1] [ref=e28]
+          - paragraph [ref=e29]: Reviews you can trust. Businesses you can reach. Search cafes, salons, home services and more — the same trusted Infoez network, now on the web.
+        - generic [ref=e30]:
+          - textbox "Coffee, plumber, dentist…" [ref=e35]
+          - textbox "City (e.g. Bengaluru)" [ref=e40]
+          - button "Search" [ref=e41] [cursor=pointer]
+        - link "Or discover businesses near me on the map" [ref=e43] [cursor=pointer]:
+          - /url: /map
+        - generic [ref=e46]:
+          - generic [ref=e47]: Verified listings
+          - generic [ref=e51]: Curated for locals
+          - generic [ref=e54]: Live ratings & reviews
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: Browse
+            - heading "Every category, one directory" [level=2] [ref=e62]
+          - link "See all →" [ref=e63] [cursor=pointer]:
+            - /url: /search
+        - generic [ref=e64]:
+          - link "Restaurants 10 businesses" [ref=e65] [cursor=pointer]:
+            - /url: /search?category_id=24068579-57fc-404f-900f-3b25659a3582
+            - generic [ref=e72]: Restaurants
+            - generic [ref=e73]: 10 businesses
+          - link "Cafes & Bakeries 5 businesses" [ref=e74] [cursor=pointer]:
+            - /url: /search?category_id=e9b73e82-62cd-47b8-80a8-587758914a57
+            - generic [ref=e81]: Cafes & Bakeries
+            - generic [ref=e82]: 5 businesses
+          - link "Beauty & Spa 2 businesses" [ref=e83] [cursor=pointer]:
+            - /url: /search?category_id=308108f0-1dfa-4831-9ac0-b932e754af6a
+            - generic [ref=e90]: Beauty & Spa
+            - generic [ref=e91]: 2 businesses
+          - link "Fitness & Wellness 0 businesses" [ref=e92] [cursor=pointer]:
+            - /url: /search?category_id=2e2d4851-98e1-45f7-96a5-840254260f61
+            - generic [ref=e99]: Fitness & Wellness
+            - generic [ref=e100]: 0 businesses
+          - link "Auto & Repair 1 business" [ref=e101] [cursor=pointer]:
+            - /url: /search?category_id=033679d6-0974-4617-86d2-01cc368b10e3
+            - generic [ref=e108]: Auto & Repair
+            - generic [ref=e109]: 1 business
+          - link "Health & Medical 4 businesses" [ref=e110] [cursor=pointer]:
+            - /url: /search?category_id=84a15cb8-9c39-409c-b1ed-23985488f1f6
+            - generic [ref=e117]: Health & Medical
+            - generic [ref=e118]: 4 businesses
+          - link "Retail & Shopping 1 business" [ref=e119] [cursor=pointer]:
+            - /url: /search?category_id=f27933c8-03af-4491-addf-e6fe242c3108
+            - generic [ref=e126]: Retail & Shopping
+            - generic [ref=e127]: 1 business
+          - link "Education 2 businesses" [ref=e128] [cursor=pointer]:
+            - /url: /search?category_id=45f66da0-93e0-49e5-80c9-38e001c94b65
+            - generic [ref=e135]: Education
+            - generic [ref=e136]: 2 businesses
+          - link "Professional 2 businesses" [ref=e137] [cursor=pointer]:
+            - /url: /search?category_id=9b74fa94-0bd1-4adb-b877-64054c4d0b85
+            - generic [ref=e144]: Professional
+            - generic [ref=e145]: 2 businesses
+          - link "Beauty clinic 1 business" [ref=e146] [cursor=pointer]:
+            - /url: /search?category_id=fd3c752d-6ce1-4fe3-bbee-f5d3f5b40c3b
+            - generic [ref=e153]: Beauty clinic
+            - generic [ref=e154]: 1 business
+          - link "Peudjjte 0 businesses" [ref=e155] [cursor=pointer]:
+            - /url: /search?category_id=ed5e8893-0ee3-4729-b174-cad7496d1f05
+            - generic [ref=e162]: Peudjjte
+            - generic [ref=e163]: 0 businesses
+          - link "981)_)_-+((( 0 businesses" [ref=e164] [cursor=pointer]:
+            - /url: /search?category_id=1008389a-541d-4d36-b90e-91cdeae0d3ca
+            - generic [ref=e171]: 981)_)_-+(((
+            - generic [ref=e172]: 0 businesses
+          - link "Hh 0 businesses" [ref=e173] [cursor=pointer]:
+            - /url: /search?category_id=47f32aaf-bc0a-4d4c-a51a-72dfa1b176de
+            - generic [ref=e180]: Hh
+            - generic [ref=e181]: 0 businesses
+          - link "Peudjkjte 0 businesses" [ref=e182] [cursor=pointer]:
+            - /url: /search?category_id=ee021273-776b-44b2-8e93-ddd571d3a102
+            - generic [ref=e189]: Peudjkjte
+            - generic [ref=e190]: 0 businesses
+          - link "Pmeudjkjte 0 businesses" [ref=e191] [cursor=pointer]:
+            - /url: /search?category_id=237a5282-9578-4893-b9ed-2a0a96b43f45
+            - generic [ref=e198]: Pmeudjkjte
+            - generic [ref=e199]: 0 businesses
+          - link "Pet Care 0 businesses" [ref=e200] [cursor=pointer]:
+            - /url: /search?category_id=7627f7e1-1d70-4834-b38d-174000156c7f
+            - generic [ref=e207]: Pet Care
+            - generic [ref=e208]: 0 businesses
+          - link "Pet nnCare 0 businesses" [ref=e209] [cursor=pointer]:
+            - /url: /search?category_id=3a1b3e32-7e9f-4be9-b516-04af9301d468
+            - generic [ref=e216]: Pet nnCare
+            - generic [ref=e217]: 0 businesses
+          - link "Pect nnCare 0 businesses" [ref=e218] [cursor=pointer]:
+            - /url: /search?category_id=160cfa14-fda2-4568-ba56-ab668d422b98
+            - generic [ref=e225]: Pect nnCare
+            - generic [ref=e226]: 0 businesses
+          - 'link "{{name}} 0 businesses" [ref=e227] [cursor=pointer]':
+            - /url: /search?category_id=2fb31afa-1017-4094-857e-3ff3da6ede5c
+            - generic [ref=e234]: "{{name}}"
+            - generic [ref=e235]: 0 businesses
+          - 'link "{{name}mm} 0 businesses" [ref=e236] [cursor=pointer]':
+            - /url: /search?category_id=49967d95-57fe-4835-9490-21f2c13bd219
+            - generic [ref=e243]: "{{name}mm}"
+            - generic [ref=e244]: 0 businesses
+          - 'link "{{bname}} 1 business" [ref=e245] [cursor=pointer]':
+            - /url: /search?category_id=38cfd603-612f-4c6d-8c78-d1866df23035
+            - generic [ref=e252]: "{{bname}}"
+            - generic [ref=e253]: 1 business
+          - 'link "{{namennnnn}} 0 businesses" [ref=e254] [cursor=pointer]':
+            - /url: /search?category_id=06d8c7ce-4419-49c2-a17f-64eb581399d7
+            - generic [ref=e261]: "{{namennnnn}}"
+            - generic [ref=e262]: 0 businesses
+          - link "Electronics 0 businesses" [ref=e263] [cursor=pointer]:
+            - /url: /search?category_id=6efb41e7-3d7e-4560-8434-4d101e977089
+            - generic [ref=e270]: Electronics
+            - generic [ref=e271]: 0 businesses
+          - link "BULB 0 businesses" [ref=e272] [cursor=pointer]:
+            - /url: /search?category_id=d7bb6c59-8c89-477d-804e-c86cb5ec088a
+            - generic [ref=e279]: BULB
+            - generic [ref=e280]: 0 businesses
+          - link "WOOD 0 businesses" [ref=e281] [cursor=pointer]:
+            - /url: /search?category_id=6e81539d-0cad-431b-8198-b4a3cc718e84
+            - generic [ref=e288]: WOOD
+            - generic [ref=e289]: 0 businesses
+          - link "SILVER 0 businesses" [ref=e290] [cursor=pointer]:
+            - /url: /search?category_id=1374975b-8142-4f40-885a-9e85dc110981
+            - generic [ref=e297]: SILVER
+            - generic [ref=e298]: 0 businesses
+          - link "Parlour1 0 businesses" [ref=e299] [cursor=pointer]:
+            - /url: /search?category_id=219b589f-0779-4dcf-ad83-784a9e005db3
+            - generic [ref=e306]: Parlour1
+            - generic [ref=e307]: 0 businesses
+          - link "Parlour2 0 businesses" [ref=e308] [cursor=pointer]:
+            - /url: /search?category_id=4c29d5d2-f3db-441e-854e-bd9fe23a9e9e
+            - generic [ref=e315]: Parlour2
+            - generic [ref=e316]: 0 businesses
+          - link "Parlour3 0 businesses" [ref=e317] [cursor=pointer]:
+            - /url: /search?category_id=ecd68a94-153b-449d-9756-ac2a8bcd48a7
+            - generic [ref=e324]: Parlour3
+            - generic [ref=e325]: 0 businesses
+          - link "Parlour4 0 businesses" [ref=e326] [cursor=pointer]:
+            - /url: /search?category_id=40b18ef3-7efc-41e5-bdf2-1b8507bb7842
+            - generic [ref=e333]: Parlour4
+            - generic [ref=e334]: 0 businesses
+          - link "Bakeries 0 businesses" [ref=e335] [cursor=pointer]:
+            - /url: /search?category_id=e8f59ed3-9e41-4f30-8279-5bf7ca5d1fe7
+            - generic [ref=e342]: Bakeries
+            - generic [ref=e343]: 0 businesses
+          - link "12345 0 businesses" [ref=e344] [cursor=pointer]:
+            - /url: /search?category_id=a7118c03-09d2-4ed6-9419-405120f96adc
+            - generic [ref=e351]: "12345"
+            - generic [ref=e352]: 0 businesses
+          - link "Bakery123 0 businesses" [ref=e353] [cursor=pointer]:
+            - /url: /search?category_id=55dd6d36-dd19-4739-be0a-18b072ec637e
+            - generic [ref=e360]: Bakery123
+            - generic [ref=e361]: 0 businesses
+          - 'link "{{postName}} 0 businesses" [ref=e362] [cursor=pointer]':
+            - /url: /search?category_id=62d9b78c-d03f-4c40-a9be-793fa1fb8b95
+            - generic [ref=e369]: "{{postName}}"
+            - generic [ref=e370]: 0 businesses
+          - link "parlour5 0 businesses" [ref=e371] [cursor=pointer]:
+            - /url: /search?category_id=f6d8bd28-3a41-43df-a3bf-b337a0d3b571
+            - generic [ref=e378]: parlour5
+            - generic [ref=e379]: 0 businesses
+          - link "parlour6 0 businesses" [ref=e380] [cursor=pointer]:
+            - /url: /search?category_id=050999a1-527b-423a-b2a5-07012a1bd73d
+            - generic [ref=e387]: parlour6
+            - generic [ref=e388]: 0 businesses
+          - link "parlour7 0 businesses" [ref=e389] [cursor=pointer]:
+            - /url: /search?category_id=bf6e19e6-b799-4606-a132-ad21f8af1b79
+            - generic [ref=e396]: parlour7
+            - generic [ref=e397]: 0 businesses
+          - link "parlour8 0 businesses" [ref=e398] [cursor=pointer]:
+            - /url: /search?category_id=c393d601-3fb7-4924-a1fd-ad8cb44e2c76
+            - generic [ref=e405]: parlour8
+            - generic [ref=e406]: 0 businesses
+          - link "parlour9 0 businesses" [ref=e407] [cursor=pointer]:
+            - /url: /search?category_id=e2a7743c-d992-42f9-8879-2ca1d9327b0b
+            - generic [ref=e414]: parlour9
+            - generic [ref=e415]: 0 businesses
+          - link "parlour10 0 businesses" [ref=e416] [cursor=pointer]:
+            - /url: /search?category_id=f85308d1-b19a-41ce-b9a2-25b871356854
+            - generic [ref=e423]: parlour10
+            - generic [ref=e424]: 0 businesses
+          - link "parl 0 businesses" [ref=e425] [cursor=pointer]:
+            - /url: /search?category_id=33a822dd-6f74-44a3-b112-6c1b6e111623
+            - generic [ref=e432]: parl
+            - generic [ref=e433]: 0 businesses
+          - link "parlo 0 businesses" [ref=e434] [cursor=pointer]:
+            - /url: /search?category_id=7004c5cf-55e0-44e2-8e4a-75a2e2cab114
+            - generic [ref=e441]: parlo
+            - generic [ref=e442]: 0 businesses
+          - link "parll 0 businesses" [ref=e443] [cursor=pointer]:
+            - /url: /search?category_id=87eb4a58-44d7-4d08-951e-a4333f328efb
+            - generic [ref=e450]: parll
+            - generic [ref=e451]: 0 businesses
+          - link "parloo 0 businesses" [ref=e452] [cursor=pointer]:
+            - /url: /search?category_id=2bf613dc-124a-4318-8f43-51ffb7fd448a
+            - generic [ref=e459]: parloo
+            - generic [ref=e460]: 0 businesses
+          - link "parlouu 0 businesses" [ref=e461] [cursor=pointer]:
+            - /url: /search?category_id=7d8fc0f1-65d5-484e-8920-fc55308b221e
+            - generic [ref=e468]: parlouu
+            - generic [ref=e469]: 0 businesses
+          - link "parlll 0 businesses" [ref=e470] [cursor=pointer]:
+            - /url: /search?category_id=a1fec33e-b530-4776-852c-0772c136b8c6
+            - generic [ref=e477]: parlll
+            - generic [ref=e478]: 0 businesses
+          - link "parlooo 0 businesses" [ref=e479] [cursor=pointer]:
+            - /url: /search?category_id=a4b5b0ff-7147-45b9-851a-6c7338be8d08
+            - generic [ref=e486]: parlooo
+            - generic [ref=e487]: 0 businesses
+          - link "Cosmetice 0 businesses" [ref=e488] [cursor=pointer]:
+            - /url: /search?category_id=febf6efa-1502-4a1d-b5f2-5a66dac02f2b
+            - generic [ref=e495]: Cosmetice
+            - generic [ref=e496]: 0 businesses
+          - link "Tea_Shop 0 businesses" [ref=e497] [cursor=pointer]:
+            - /url: /search?category_id=b2f09fb4-d9d3-43cf-a7ce-f9f18e1c65a2
+            - generic [ref=e504]: Tea_Shop
+            - generic [ref=e505]: 0 businesses
+          - link "Beaty Saloon 0 businesses" [ref=e506] [cursor=pointer]:
+            - /url: /search?category_id=4200c2ab-d5e0-4c19-b7f9-a6c0fc4cb3b8
+            - generic [ref=e513]: Beaty Saloon
+            - generic [ref=e514]: 0 businesses
+          - link "Hair Saloon 0 businesses" [ref=e515] [cursor=pointer]:
+            - /url: /search?category_id=6528f225-3a7c-46fb-8480-162ce67ce572
+            - generic [ref=e522]: Hair Saloon
+            - generic [ref=e523]: 0 businesses
+          - link "Nail art 0 businesses" [ref=e524] [cursor=pointer]:
+            - /url: /search?category_id=c0a9d4ca-61de-4a29-a0c9-0e5ae47ec1c7
+            - generic [ref=e531]: Nail art
+            - generic [ref=e532]: 0 businesses
+          - link "Nature 0 businesses" [ref=e533] [cursor=pointer]:
+            - /url: /search?category_id=bffc313f-d9bd-4c8e-a440-0ef4633aae67
+            - generic [ref=e540]: Nature
+            - generic [ref=e541]: 0 businesses
+          - link "Category QA MAQQWQ 0 businesses" [ref=e542] [cursor=pointer]:
+            - /url: /search?category_id=945930a8-5550-4428-907b-63b31bd0c50e
+            - generic [ref=e549]: Category QA MAQQWQ
+            - generic [ref=e550]: 0 businesses
+          - link "Category QA EQQTRO 0 businesses" [ref=e551] [cursor=pointer]:
+            - /url: /search?category_id=cf54cf6c-f8a4-4999-b116-a490442823a3
+            - generic [ref=e558]: Category QA EQQTRO
+            - generic [ref=e559]: 0 businesses
+          - link "Category QA DVNEQT 0 businesses" [ref=e560] [cursor=pointer]:
+            - /url: /search?category_id=9096c433-252b-4bb3-8a1d-ad7d25ed9fa8
+            - generic [ref=e567]: Category QA DVNEQT
+            - generic [ref=e568]: 0 businesses
+          - link "Category QA UQAKZU 0 businesses" [ref=e569] [cursor=pointer]:
+            - /url: /search?category_id=1431b78e-2b24-470e-9f14-6caa262bf0fb
+            - generic [ref=e576]: Category QA UQAKZU
+            - generic [ref=e577]: 0 businesses
+          - link "Category QA AKUQQQ 0 businesses" [ref=e578] [cursor=pointer]:
+            - /url: /search?category_id=56e85df7-76bf-4210-bca1-e217cb99fc97
+            - generic [ref=e585]: Category QA AKUQQQ
+            - generic [ref=e586]: 0 businesses
+          - link "Category QA QQMZOF 0 businesses" [ref=e587] [cursor=pointer]:
+            - /url: /search?category_id=d6ff4809-f897-45a9-8b47-142acb109bfd
+            - generic [ref=e594]: Category QA QQMZOF
+            - generic [ref=e595]: 0 businesses
+          - link "Category QA GYFJSV 0 businesses" [ref=e596] [cursor=pointer]:
+            - /url: /search?category_id=2aecdd64-75df-4128-a50b-d3d237a364d1
+            - generic [ref=e603]: Category QA GYFJSV
+            - generic [ref=e604]: 0 businesses
+          - link "Category QA LIHQRQ 0 businesses" [ref=e605] [cursor=pointer]:
+            - /url: /search?category_id=fc4693d9-6cfd-4698-bb51-07085a556809
+            - generic [ref=e612]: Category QA LIHQRQ
+            - generic [ref=e613]: 0 businesses
+          - link "Iron 0 businesses" [ref=e614] [cursor=pointer]:
+            - /url: /search?category_id=e86c0582-d779-4362-8067-fd5e8ed4aa2c
+            - generic [ref=e621]: Iron
+            - generic [ref=e622]: 0 businesses
+          - link "Statue QA NFKOVC 0 businesses" [ref=e623] [cursor=pointer]:
+            - /url: /search?category_id=108a0a18-0124-47dc-9141-639ae11e13ce
+            - generic [ref=e630]: Statue QA NFKOVC
+            - generic [ref=e631]: 0 businesses
+          - link "Nature QA BEQQQR 0 businesses" [ref=e632] [cursor=pointer]:
+            - /url: /search?category_id=cc75a2d9-65a2-43e2-8c52-f03e00181c9e
+            - generic [ref=e639]: Nature QA BEQQQR
+            - generic [ref=e640]: 0 businesses
+          - link "Fans 0 businesses" [ref=e641] [cursor=pointer]:
+            - /url: /search?category_id=67d32c56-968a-4221-96f2-1da0904be502
+            - generic [ref=e648]: Fans
+            - generic [ref=e649]: 0 businesses
+          - link "Woodwork 0 businesses" [ref=e650] [cursor=pointer]:
+            - /url: /search?category_id=b3ef57f0-6436-4a94-956d-0a954d6e5239
+            - generic [ref=e657]: Woodwork
+            - generic [ref=e658]: 0 businesses
+          - link "Robotics 0 businesses" [ref=e659] [cursor=pointer]:
+            - /url: /search?category_id=6f574508-565f-460d-805a-e9f7c44be250
+            - generic [ref=e666]: Robotics
+            - generic [ref=e667]: 0 businesses
+          - link "H27382 0 businesses" [ref=e668] [cursor=pointer]:
+            - /url: /search?category_id=0506c9ed-5a80-4ac1-a3c2-5ec459d842c1
+            - generic [ref=e675]: H27382
+            - generic [ref=e676]: 0 businesses
+      - generic [ref=e678]:
+        - generic [ref=e679]:
+          - generic [ref=e680]:
+            - generic [ref=e681]: Editor's pick
+            - heading "Featured this week" [level=2] [ref=e682]
+          - link "See all →" [ref=e683] [cursor=pointer]:
+            - /url: /search?featured=true
+        - generic [ref=e684]:
+          - link "Vikash TradeFare Toggle favorite Featured Vikash TradeFare TradeFare Kerala $$ 0.0 (0) View →" [ref=e685] [cursor=pointer]:
+            - /url: /business/vikash-tradefare
+            - generic [ref=e686]:
+              - img "Vikash TradeFare" [ref=e687]
+              - button "Toggle favorite" [ref=e688]
+              - generic [ref=e691]: Featured
+            - generic [ref=e692]:
+              - heading "Vikash TradeFare" [level=3] [ref=e694]
+              - paragraph [ref=e698]: TradeFare
+              - generic [ref=e699]:
+                - generic [ref=e700]: Kerala
+                - generic [ref=e704]: $$
+              - generic [ref=e705]:
+                - generic [ref=e706]:
+                  - generic [ref=e709]: "0.0"
+                  - generic [ref=e710]: (0)
+                - generic [ref=e711]: View →
+          - link "Bloom Beauty Studio Toggle favorite Featured Bloom Beauty Studio Full-service salon offering hair, skin, nails and bridal packages by senior stylists. Mumbai $$$ 5.0 (1) View →" [ref=e712] [cursor=pointer]:
+            - /url: /business/bloom-beauty-studio-3
+            - generic [ref=e713]:
+              - img "Bloom Beauty Studio" [ref=e714]
+              - button "Toggle favorite" [ref=e715]
+              - generic [ref=e718]: Featured
+            - generic [ref=e719]:
+              - heading "Bloom Beauty Studio" [level=3] [ref=e721]
+              - paragraph [ref=e725]: Full-service salon offering hair, skin, nails and bridal packages by senior stylists.
+              - generic [ref=e726]:
+                - generic [ref=e727]: Mumbai
+                - generic [ref=e731]: $$$
+              - generic [ref=e732]:
+                - generic [ref=e733]:
+                  - generic [ref=e736]: "5.0"
+                  - generic [ref=e737]: (1)
+                - generic [ref=e738]: View →
+      - generic [ref=e740]:
+        - generic [ref=e741]:
+          - generic [ref=e742]:
+            - generic [ref=e743]: Highest scores
+            - heading "Top rated near you" [level=2] [ref=e744]
+          - link "See all →" [ref=e745] [cursor=pointer]:
+            - /url: /search?sort=rating
+        - generic [ref=e746]:
+          - link "Bloom Beauty Studio Toggle favorite Featured Bloom Beauty Studio Full-service salon offering hair, skin, nails and bridal packages by senior stylists. Mumbai $$$ 5.0 (1) View →" [ref=e747] [cursor=pointer]:
+            - /url: /business/bloom-beauty-studio-3
+            - generic [ref=e748]:
+              - img "Bloom Beauty Studio" [ref=e749]
+              - button "Toggle favorite" [ref=e750]
+              - generic [ref=e753]: Featured
+            - generic [ref=e754]:
+              - heading "Bloom Beauty Studio" [level=3] [ref=e756]
+              - paragraph [ref=e760]: Full-service salon offering hair, skin, nails and bridal packages by senior stylists.
+              - generic [ref=e761]:
+                - generic [ref=e762]: Mumbai
+                - generic [ref=e766]: $$$
+              - generic [ref=e767]:
+                - generic [ref=e768]:
+                  - generic [ref=e771]: "5.0"
+                  - generic [ref=e772]: (1)
+                - generic [ref=e773]: View →
+          - link "Aarogya Clinic Toggle favorite Aarogya Clinic General physicians, paediatrics and lab tests under one roof. Walk-ins welcome. Chennai $ 5.0 (1) View →" [ref=e774] [cursor=pointer]:
+            - /url: /business/aarogya-clinic-7
+            - generic [ref=e775]:
+              - img "Aarogya Clinic" [ref=e776]
+              - button "Toggle favorite" [ref=e777]
+            - generic [ref=e780]:
+              - heading "Aarogya Clinic" [level=3] [ref=e782]
+              - paragraph [ref=e783]: General physicians, paediatrics and lab tests under one roof. Walk-ins welcome.
+              - generic [ref=e784]:
+                - generic [ref=e785]: Chennai
+                - generic [ref=e789]: $
+              - generic [ref=e790]:
+                - generic [ref=e791]:
+                  - generic [ref=e794]: "5.0"
+                  - generic [ref=e795]: (1)
+                - generic [ref=e796]: View →
+          - link "Ledger & Co. Toggle favorite Ledger & Co. Chartered accountants for SMEs. GST, tax filing, audits and financial advisory. Delhi $ 5.0 (1) View →" [ref=e797] [cursor=pointer]:
+            - /url: /business/ledger-co-10
+            - generic [ref=e798]:
+              - img "Ledger & Co." [ref=e799]
+              - button "Toggle favorite" [ref=e800]
+            - generic [ref=e803]:
+              - heading "Ledger & Co." [level=3] [ref=e805]
+              - paragraph [ref=e809]: Chartered accountants for SMEs. GST, tax filing, audits and financial advisory.
+              - generic [ref=e810]:
+                - generic [ref=e811]: Delhi
+                - generic [ref=e815]: $
+              - generic [ref=e816]:
+                - generic [ref=e817]:
+                  - generic [ref=e820]: "5.0"
+                  - generic [ref=e821]: (1)
+                - generic [ref=e822]: View →
+          - link "Petal & Pour Toggle favorite Petal & Pour Depends on your Menu specific vibe, Menu and Target Crowd Chennai $$ 5.0 (1) View →" [ref=e823] [cursor=pointer]:
+            - /url: /business/petal-pour
+            - generic [ref=e824]:
+              - img "Petal & Pour" [ref=e825]
+              - button "Toggle favorite" [ref=e826]
+            - generic [ref=e829]:
+              - heading "Petal & Pour" [level=3] [ref=e831]
+              - paragraph [ref=e835]: Depends on your Menu specific vibe, Menu and Target Crowd
+              - generic [ref=e836]:
+                - generic [ref=e837]: Chennai
+                - generic [ref=e841]: $$
+              - generic [ref=e842]:
+                - generic [ref=e843]:
+                  - generic [ref=e846]: "5.0"
+                  - generic [ref=e847]: (1)
+                - generic [ref=e848]: View →
+          - link "@#$%^ Toggle favorite @#$%^ coffee and sncks mumbai $$ 5.0 (1) View →" [ref=e849] [cursor=pointer]:
+            - /url: /business/-2
+            - generic [ref=e850]:
+              - img "@#$%^" [ref=e851]
+              - button "Toggle favorite" [ref=e852]
+            - generic [ref=e855]:
+              - heading "@#$%^" [level=3] [ref=e857]
+              - paragraph [ref=e858]: coffee and sncks
+              - generic [ref=e859]:
+                - generic [ref=e860]: mumbai
+                - generic [ref=e864]: $$
+              - generic [ref=e865]:
+                - generic [ref=e866]:
+                  - generic [ref=e869]: "5.0"
+                  - generic [ref=e870]: (1)
+                - generic [ref=e871]: View →
+          - link "Artisan Dental Clinic Toggle favorite Artisan Dental Clinic Modern gentle dental care and orthodontics. Bengaluru 5.0 (1) View →" [ref=e872] [cursor=pointer]:
+            - /url: /business/artisan-dental-clinic-8
+            - generic [ref=e873]:
+              - img "Artisan Dental Clinic" [ref=e874]
+              - button "Toggle favorite" [ref=e875]
+            - generic [ref=e878]:
+              - heading "Artisan Dental Clinic" [level=3] [ref=e880]
+              - paragraph [ref=e884]: Modern gentle dental care and orthodontics.
+              - generic [ref=e885]: Bengaluru
+              - generic [ref=e890]:
+                - generic [ref=e891]:
+                  - generic [ref=e894]: "5.0"
+                  - generic [ref=e895]: (1)
+                - generic [ref=e896]: View →
+          - link "Saloon Toggle favorite Saloon Hair care services Bengaluru 5.0 (1) View →" [ref=e897] [cursor=pointer]:
+            - /url: /business/saloon-33
+            - generic [ref=e898]:
+              - img "Saloon" [ref=e899]
+              - button "Toggle favorite" [ref=e900]
+            - generic [ref=e903]:
+              - heading "Saloon" [level=3] [ref=e905]
+              - paragraph [ref=e909]: Hair care services
+              - generic [ref=e910]: Bengaluru
+              - generic [ref=e915]:
+                - generic [ref=e916]:
+                  - generic [ref=e919]: "5.0"
+                  - generic [ref=e920]: (1)
+                - generic [ref=e921]: View →
+          - link "Tea Time Toggle favorite Tea Time The Tea is yummy Trichy $$ 3.0 (1) View →" [ref=e922] [cursor=pointer]:
+            - /url: /business/tea-time
+            - generic [ref=e923]:
+              - img "Tea Time" [ref=e924]
+              - button "Toggle favorite" [ref=e925]
+            - generic [ref=e928]:
+              - heading "Tea Time" [level=3] [ref=e930]
+              - paragraph [ref=e931]: The Tea is yummy
+              - generic [ref=e932]:
+                - generic [ref=e933]: Trichy
+                - generic [ref=e937]: $$
+              - generic [ref=e938]:
+                - generic [ref=e939]:
+                  - generic [ref=e942]: "3.0"
+                  - generic [ref=e943]: (1)
+                - generic [ref=e944]: View →
+      - generic [ref=e946]:
+        - generic [ref=e947]:
+          - generic [ref=e948]:
+            - generic [ref=e949]: Fresh listings
+            - heading "Recently added" [level=2] [ref=e950]
+          - link "See all →" [ref=e951] [cursor=pointer]:
+            - /url: /search
+        - generic [ref=e952]:
+          - link "Aroma Cafe Toggle favorite Aroma Cafe Fresh coffee and tasty snacks Bengaluru $$ 0.0 (0) View →" [ref=e953] [cursor=pointer]:
+            - /url: /business/aroma-cafe-5
+            - generic [ref=e954]:
+              - img "Aroma Cafe" [ref=e955]
+              - button "Toggle favorite" [ref=e956]
+            - generic [ref=e959]:
+              - heading "Aroma Cafe" [level=3] [ref=e961]
+              - paragraph [ref=e962]: Fresh coffee and tasty snacks
+              - generic [ref=e963]:
+                - generic [ref=e964]: Bengaluru
+                - generic [ref=e968]: $$
+              - generic [ref=e969]:
+                - generic [ref=e970]:
+                  - generic [ref=e973]: "0.0"
+                  - generic [ref=e974]: (0)
+                - generic [ref=e975]: View →
+          - link "Aroma Cafe Toggle favorite Aroma Cafe Fresh coffee and tasty snacks Bengaluru $$ 0.0 (0) View →" [ref=e976] [cursor=pointer]:
+            - /url: /business/aroma-cafe-4
+            - generic [ref=e977]:
+              - img "Aroma Cafe" [ref=e978]
+              - button "Toggle favorite" [ref=e979]
+            - generic [ref=e982]:
+              - heading "Aroma Cafe" [level=3] [ref=e984]
+              - paragraph [ref=e985]: Fresh coffee and tasty snacks
+              - generic [ref=e986]:
+                - generic [ref=e987]: Bengaluru
+                - generic [ref=e991]: $$
+              - generic [ref=e992]:
+                - generic [ref=e993]:
+                  - generic [ref=e996]: "0.0"
+                  - generic [ref=e997]: (0)
+                - generic [ref=e998]: View →
+          - link "Kiaq Toggle favorite Kiaq Welcome to the kiaq Chennai $$$ 0.0 (0) View →" [ref=e999] [cursor=pointer]:
+            - /url: /business/kiaq
+            - generic [ref=e1000]:
+              - img "Kiaq" [ref=e1001]
+              - button "Toggle favorite" [ref=e1002]
+            - generic [ref=e1005]:
+              - heading "Kiaq" [level=3] [ref=e1007]
+              - paragraph [ref=e1011]: Welcome to the kiaq
+              - generic [ref=e1012]:
+                - generic [ref=e1013]: Chennai
+                - generic [ref=e1017]: $$$
+              - generic [ref=e1018]:
+                - generic [ref=e1019]:
+                  - generic [ref=e1022]: "0.0"
+                  - generic [ref=e1023]: (0)
+                - generic [ref=e1024]: View →
+          - link "Saloon Toggle favorite Saloon Hair care services Bengaluru 0.0 (0) View →" [ref=e1025] [cursor=pointer]:
+            - /url: /business/saloon-43
+            - generic [ref=e1026]:
+              - img "Saloon" [ref=e1027]
+              - button "Toggle favorite" [ref=e1028]
+            - generic [ref=e1031]:
+              - heading "Saloon" [level=3] [ref=e1033]
+              - paragraph [ref=e1037]: Hair care services
+              - generic [ref=e1038]: Bengaluru
+              - generic [ref=e1043]:
+                - generic [ref=e1044]:
+                  - generic [ref=e1047]: "0.0"
+                  - generic [ref=e1048]: (0)
+                - generic [ref=e1049]: View →
+          - link "Saloon Toggle favorite Saloon Hair care services Bengaluru 0.0 (0) View →" [ref=e1050] [cursor=pointer]:
+            - /url: /business/saloon-42
+            - generic [ref=e1051]:
+              - img "Saloon" [ref=e1052]
+              - button "Toggle favorite" [ref=e1053]
+            - generic [ref=e1056]:
+              - heading "Saloon" [level=3] [ref=e1058]
+              - paragraph [ref=e1062]: Hair care services
+              - generic [ref=e1063]: Bengaluru
+              - generic [ref=e1068]:
+                - generic [ref=e1069]:
+                  - generic [ref=e1072]: "0.0"
+                  - generic [ref=e1073]: (0)
+                - generic [ref=e1074]: View →
+          - link "Saloon Toggle favorite Saloon Hair care services Bengaluru 0.0 (0) View →" [ref=e1075] [cursor=pointer]:
+            - /url: /business/saloon-41
+            - generic [ref=e1076]:
+              - img "Saloon" [ref=e1077]
+              - button "Toggle favorite" [ref=e1078]
+            - generic [ref=e1081]:
+              - heading "Saloon" [level=3] [ref=e1083]
+              - paragraph [ref=e1087]: Hair care services
+              - generic [ref=e1088]: Bengaluru
+              - generic [ref=e1093]:
+                - generic [ref=e1094]:
+                  - generic [ref=e1097]: "0.0"
+                  - generic [ref=e1098]: (0)
+                - generic [ref=e1099]: View →
+          - link "gm pet clicnic Toggle favorite gm pet clicnic d dd $$ 0.0 (0) View →" [ref=e1100] [cursor=pointer]:
+            - /url: /business/gm-pet-clicnic
+            - generic [ref=e1101]:
+              - img "gm pet clicnic" [ref=e1102]
+              - button "Toggle favorite" [ref=e1103]
+            - generic [ref=e1106]:
+              - heading "gm pet clicnic" [level=3] [ref=e1108]
+              - paragraph [ref=e1109]: d
+              - generic [ref=e1110]:
+                - generic [ref=e1111]: dd
+                - generic [ref=e1115]: $$
+              - generic [ref=e1116]:
+                - generic [ref=e1117]:
+                  - generic [ref=e1120]: "0.0"
+                  - generic [ref=e1121]: (0)
+                - generic [ref=e1122]: View →
+          - link "Saloon Toggle favorite Saloon Hair care services Bengaluru 0.0 (0) View →" [ref=e1123] [cursor=pointer]:
+            - /url: /business/saloon-40
+            - generic [ref=e1124]:
+              - img "Saloon" [ref=e1125]
+              - button "Toggle favorite" [ref=e1126]
+            - generic [ref=e1129]:
+              - heading "Saloon" [level=3] [ref=e1131]
+              - paragraph [ref=e1135]: Hair care services
+              - generic [ref=e1136]: Bengaluru
+              - generic [ref=e1141]:
+                - generic [ref=e1142]:
+                  - generic [ref=e1145]: "0.0"
+                  - generic [ref=e1146]: (0)
+                - generic [ref=e1147]: View →
+      - generic [ref=e1150]:
+        - generic [ref=e1151]:
+          - generic [ref=e1152]: For business owners
+          - heading "Get discovered by locals actively looking." [level=2] [ref=e1153]
+          - paragraph [ref=e1154]: List your business in minutes. Manage leads, showcase photos, respond to reviews and grow with Infoez.
+        - generic [ref=e1155]:
+          - link "Add your business" [ref=e1156] [cursor=pointer]:
+            - /url: /register?role=business_owner
+          - link "See pricing" [ref=e1157] [cursor=pointer]:
+            - /url: /pricing
+  - contentinfo [ref=e1158]:
+    - generic [ref=e1159]:
+      - generic [ref=e1160]:
+        - generic [ref=e1161]: Infoez
+        - paragraph [ref=e1167]: Find Local. Choose Better. The trusted directory for verified local businesses and services.
+      - generic [ref=e1168]:
+        - generic [ref=e1169]: Discover
+        - list [ref=e1170]:
+          - listitem [ref=e1171]:
+            - link "All Businesses" [ref=e1172] [cursor=pointer]:
+              - /url: /search
+          - listitem [ref=e1173]:
+            - link "Featured" [ref=e1174] [cursor=pointer]:
+              - /url: /search?featured=true
+          - listitem [ref=e1175]:
+            - link "Top Rated" [ref=e1176] [cursor=pointer]:
+              - /url: /search?sort=rating
+      - generic [ref=e1177]:
+        - generic [ref=e1178]: For Business
+        - list [ref=e1179]:
+          - listitem [ref=e1180]:
+            - link "Add your business" [ref=e1181] [cursor=pointer]:
+              - /url: /register?role=business_owner
+          - listitem [ref=e1182]:
+            - link "Pricing plans" [ref=e1183] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e1184]:
+            - link "How claims work" [ref=e1185] [cursor=pointer]:
+              - /url: /how-it-works
+      - generic [ref=e1186]:
+        - generic [ref=e1187]: Company
+        - list [ref=e1188]:
+          - listitem [ref=e1189]:
+            - link "How it works" [ref=e1190] [cursor=pointer]:
+              - /url: /how-it-works
+          - listitem [ref=e1191]:
+            - link "Pricing" [ref=e1192] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e1193]:
+            - link "Contact" [ref=e1194] [cursor=pointer]:
+              - /url: /
+    - generic [ref=e1196]:
+      - paragraph [ref=e1197]: © 2026 Infoez. All rights reserved.
+      - paragraph [ref=e1198]: Find Local. Choose Better.
+  - region "Notifications alt+T"
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "@playwright/test";
+  2  | 
+  3  | export class BasePage{
+  4  |     /**@param {import('@playwright/test').Page} page */
+  5  |     constructor(page){
+  6  |         this.page = page;
+  7  |     }
+  8  | 
+  9  |     //url
+  10 |     async openapp(url){
+  11 |         await this.page.goto(url);
+  12 |     }
+  13 | 
+  14 |     async fill(element, text){
+  15 |         await element.fill(text);
+  16 |     }
+  17 | 
+  18 |    async click(element) {
+> 19 |         await element.waitFor({ state: 'visible', timeout: 15000 });
+     |                       ^ TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+  20 |         await element.click({ timeout: 15000 });
+  21 |     }
+  22 | }
+  23 | 
+  24 | 
+```

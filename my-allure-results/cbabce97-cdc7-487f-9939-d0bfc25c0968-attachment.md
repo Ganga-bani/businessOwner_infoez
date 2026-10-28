@@ -1,0 +1,193 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: features\Features.feature.spec.js >> Infoez business login page >> Business Explore with city name
+- Location: .features-gen\features\Features.feature.spec.js:78:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//input[@data-testid=\'search-location-input\']')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Infoez Find Local" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e11]:
+          - generic [ref=e12]: Infoez
+          - generic [ref=e13]: Find Local
+      - navigation [ref=e14]:
+        - link "Explore" [ref=e15] [cursor=pointer]:
+          - /url: /search
+        - link "Near me" [ref=e16] [cursor=pointer]:
+          - /url: /map
+        - link "How it works" [ref=e17] [cursor=pointer]:
+          - /url: /how-it-works
+        - link "Pricing" [ref=e18] [cursor=pointer]:
+          - /url: /pricing
+      - button "R Ravi" [active] [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: R
+        - generic [ref=e23]: Ravi
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - complementary [ref=e26]:
+        - link "Overview" [ref=e27] [cursor=pointer]:
+          - /url: /business/dashboard
+        - link "My Businesses" [ref=e33] [cursor=pointer]:
+          - /url: /business/dashboard/businesses
+        - link "Leads" [ref=e39] [cursor=pointer]:
+          - /url: /business/dashboard/leads
+        - link "Add Business" [ref=e43] [cursor=pointer]:
+          - /url: /business/dashboard/new
+      - generic [ref=e46]:
+        - generic [ref=e47]: Overview
+        - heading "Business dashboard" [level=1] [ref=e48]
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: Businesses
+            - generic [ref=e58]: "200"
+          - generic [ref=e59]:
+            - generic [ref=e60]: Leads
+            - generic [ref=e67]: "12"
+          - generic [ref=e68]:
+            - generic [ref=e69]: Total reviews
+            - generic [ref=e73]: "3"
+          - generic [ref=e74]:
+            - generic [ref=e75]: Total views
+            - generic [ref=e80]: "1621"
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: Your businesses
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - generic [ref=e86]: Bloom Beauty Studio
+                - generic [ref=e87]: "5.0"
+              - generic [ref=e90]:
+                - generic [ref=e91]: HomeFix Pro
+                - generic [ref=e92]: "0.0"
+              - generic [ref=e95]:
+                - generic [ref=e96]: QuickShift Auto
+                - generic [ref=e97]: "0.0"
+              - generic [ref=e100]:
+                - generic [ref=e101]: Aarogya Clinic
+                - generic [ref=e102]: "5.0"
+              - generic [ref=e105]:
+                - generic [ref=e106]: Bright Minds Academy
+                - generic [ref=e107]: "0.0"
+          - generic [ref=e110]:
+            - generic [ref=e111]: Recent leads
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e114]: Ravi Kumar → Petal & Pour
+                - generic [ref=e115]: hlo
+              - generic [ref=e116]:
+                - generic [ref=e117]: Ravi Kumar → Petal & Pour
+                - generic [ref=e118]: xdcdcecs
+              - generic [ref=e119]:
+                - generic [ref=e120]: Customer → Bloom Beauty Studio
+                - generic [ref=e121]: I would like to know more about your services.
+              - generic [ref=e122]:
+                - generic [ref=e123]: Priya Sharma → Aarogya Clinic
+                - generic [ref=e124]: I would like to know more about your services.
+              - generic [ref=e125]:
+                - generic [ref=e126]: Ravi Kumar → Petal & Pour
+                - generic [ref=e127]: Know more
+  - contentinfo [ref=e128]:
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - generic [ref=e131]: Infoez
+        - paragraph [ref=e137]: Find Local. Choose Better. The trusted directory for verified local businesses and services.
+      - generic [ref=e138]:
+        - generic [ref=e139]: Discover
+        - list [ref=e140]:
+          - listitem [ref=e141]:
+            - link "All Businesses" [ref=e142] [cursor=pointer]:
+              - /url: /search
+          - listitem [ref=e143]:
+            - link "Featured" [ref=e144] [cursor=pointer]:
+              - /url: /search?featured=true
+          - listitem [ref=e145]:
+            - link "Top Rated" [ref=e146] [cursor=pointer]:
+              - /url: /search?sort=rating
+      - generic [ref=e147]:
+        - generic [ref=e148]: For Business
+        - list [ref=e149]:
+          - listitem [ref=e150]:
+            - link "Add your business" [ref=e151] [cursor=pointer]:
+              - /url: /register?role=business_owner
+          - listitem [ref=e152]:
+            - link "Pricing plans" [ref=e153] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e154]:
+            - link "How claims work" [ref=e155] [cursor=pointer]:
+              - /url: /how-it-works
+      - generic [ref=e156]:
+        - generic [ref=e157]: Company
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - link "How it works" [ref=e160] [cursor=pointer]:
+              - /url: /how-it-works
+          - listitem [ref=e161]:
+            - link "Pricing" [ref=e162] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e163]:
+            - link "Contact" [ref=e164] [cursor=pointer]:
+              - /url: /business/dashboard
+    - generic [ref=e166]:
+      - paragraph [ref=e167]: © 2026 Infoez. All rights reserved.
+      - paragraph [ref=e168]: Find Local. Choose Better.
+  - region "Notifications alt+T"
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "@playwright/test";
+  2  | 
+  3  | export class BasePage{
+  4  |     /**@param {import('@playwright/test').Page} page */
+  5  |     constructor(page){
+  6  |         this.page = page;
+  7  |     }
+  8  | 
+  9  |     //url
+  10 |     async openapp(url){
+  11 |         await this.page.goto(url);
+  12 |     }
+  13 | 
+  14 |     async fill(element, text){
+> 15 |         await element.fill(text);
+     |                       ^ Error: locator.fill: Test timeout of 30000ms exceeded.
+  16 |     }
+  17 | 
+  18 |    async click(element) {
+  19 |         await element.waitFor({ state: 'visible', timeout: 15000 });
+  20 |         await element.click();
+  21 |     }
+  22 |     /**@param {import('@playwright/test').Locator} element */
+  23 |     async selectdropdown(element,text){
+  24 |         await element.click();
+  25 |         await this.page.getByText(text,{exact:true}).click(); 
+  26 |     }
+  27 |     
+  28 | }
+  29 | 
+  30 | 
+```
